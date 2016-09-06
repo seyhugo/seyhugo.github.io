@@ -4,8 +4,10 @@
 <title>Wacko Wacker</title>
 
 <script>
+var counter = 0;
 function myFunction() {
-    alert("I clicked the Pig!");
+ counter++;
+ document.getElementById("counter1").innerHTML = counter;
 }
 </script>
 </head>
@@ -13,6 +15,8 @@ function myFunction() {
 
 <h3> Hit the Wacko to get burritos<h3>
  <button type="button" onclick="myFunction()">Try it</button>
+ <div id="counter1"/>
+ <p>
 <img onclick="myFunction()" src= https://upload.wikimedia.org/wikipedia/commons/3/37/Sus_Barbatus,_the_Bornean_Bearded_Pig_(12616351323).jpg> 
 
 </body>
