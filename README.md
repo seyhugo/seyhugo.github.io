@@ -1,1 +1,0 @@
-# seyhugo.github.io
