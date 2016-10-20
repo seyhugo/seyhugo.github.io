@@ -9,11 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <link rel="stylesheet" type="text/css" href="css/wacker.css">
-<input id="Burritonians" type= "submit" name= "Enslave Burritonians" onclick= "Burrito2();" value="Enslave Burritonians">
- <input type="image" id="Burrito's" src="https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px" onclick = "Burrito();">
- <p id= "cost"> [object HTMLParagraph Element] Burritos </p>
- <p id="counter"> 0 Burrito's </p>
- <p id="p/s"> </p>
+
 
 
 <script>
@@ -27,32 +23,7 @@ function Burrito() {
  document.getElementById("counter1).innerHTML = counter + "Burritos" ;
 }
 
-function Burrito2() {
-if(counter >=10){
-Burritonians ++;
-counter -=10;
-cost1 +=5;
-document.getElementById("p/s").innerHTML= Burritonians * 1 + "burritos per second"
-document.getElementById("counter").innerHTML = counter + "burritos";
-var persecond = Burritonian;
-var cost = cost1;
-}
-else{
-alert("You Need More Burritos")
-}
-}
 
-setInterval(second,1000);
-
-function second (){
-counter += persecond;
-document.getElementById("counter1").innerHTML = counter + " burritos";
-}
-function second(){
-if(Burritonians >= 1){
-counter += Burritonians;
-document.getElementById("cost").innerHTML = counter + "burritos";
-}
 }
  </script>
  
