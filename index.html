@@ -9,10 +9,15 @@
 <link rel="stylesheet" type="text/css" href="css/wacker.css">
 <script>
 var counter = 0;
-function Burrito() {
- counter++;
-document.getElementById("counter1").innerHTML = counter;
+function addBurrito() {
+  counter++;
+  document.getElementById("counter1").innerHTML = counter;
 }
+ 
+function  startAutomaticCounter() {
+ setInterval(addBurrito(), 1000);
+}
+ 
 </script>
 </head>
 <body>
@@ -28,10 +33,10 @@ document.getElementById("counter1").innerHTML = counter;
 
     </div>
 
-        <div align = "left"><img onclick="Burrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"> 
+        <div align = "left"><img onclick="addBurrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"> 
 
 </div>
-
+     <button onclick="startAutomaticCounter()"> AddBurrito</button>
 
 
     
