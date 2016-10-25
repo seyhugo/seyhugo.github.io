@@ -12,8 +12,15 @@ var counter = 0;
 
  
 function  startAutomaticCounter() {
+ if ( counter >=10){
  setInterval(addBurrito, 1000);
+} else { 
+ alert("10 Burritos Required");
 }
+ 
+}
+ 
+ 
 function addBurrito() {
   counter++;
   document.getElementById("counter1").innerHTML = counter;
