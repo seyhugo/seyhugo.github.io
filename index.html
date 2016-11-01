@@ -11,13 +11,16 @@
 var counter = 0;
 var incrementer = 1;
 var costAdd = 10
+var alertDisplay = 10
 function  startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
  setInterval(addBurrito, 1000);
   counter-=10;
+  costAdd*2;
+  alertDisplay*2;
 } else { 
- alert("10 Burritos Required");
+ alert(alertDisplay + "Burritos Needed!");
 }
  
 }
