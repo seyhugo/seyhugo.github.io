@@ -10,10 +10,13 @@
 <script>
 var counter = 0;
 var incrementer = 1;
-var costAdd = 10
-var alertDisplay = 10
-var costMinus = 10
-function  startAutomaticCounter() {
+var costAdd = 10;
+var alertDisplay = 10;
+var costMinus = 10;
+var costAdd2  = 5;
+var costMinus2 = 10;
+var alertDisplay2 = 5;
+function startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
  setInterval(addBurrito, 1000);
@@ -26,7 +29,17 @@ function  startAutomaticCounter() {
 }
  
 }
- 
+
+function addMorePerClick() {
+ if (counter >= costAdd2){
+  counter = counter * 2;
+  counter -= costMinus2;
+  costAdd2 = costAdd2 * 2;
+  costMinus2= costMinus2 * 2;
+  alertDisplay2= alertDisplay2 * 2;
+} else { 
+ alert(alertDisplay2 + " Burritos Needed!");
+}
  
 function addBurrito() {
   counter= counter + incrementer;
@@ -51,7 +64,7 @@ function addBurrito() {
 </div>
  <button onclick="startAutomaticCounter()"> AddBurrito</button>
     
-
+<button onclick
 </body>
 
 </html> 
