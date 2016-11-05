@@ -7,16 +7,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <link rel="stylesheet" type="text/css" href="css/wacker.css"/>
+
 <script>
 var counter = 0;
 var incrementer = 1;
-var costAdd = 10;
-var alertDisplay = 10;
-var costMinus = 10;
-var costAdd2  = 5;
-var costMinus2 = 10;
-var alertDisplay2 = 5;
-function startAutomaticCounter() {
+var costAdd = 10
+var alertDisplay = 10
+var costMinus = 10
+function  startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
  setInterval(addBurrito, 1000);
@@ -24,23 +22,11 @@ function startAutomaticCounter() {
   costAdd= costAdd *  2;
   alertDisplay= alertDisplay * 2;
   costMinus= costMinus * 2;
+
 } else { 
  alert(alertDisplay + " Burritos Needed!");
 }
- 
 }
-
-function addMorePerClick() {
- if (counter >= costAdd2){
-  counter = counter * 2;
-  counter -= costMinus2;
-  costAdd2 = costAdd2 * 2;
-  costMinus2= costMinus2 * 2;
-  alertDisplay2= alertDisplay2 * 2;
-} else { 
- alert(alertDisplay2 + " Burritos Needed!");
-}
- 
 function addBurrito() {
   counter= counter + incrementer;
   document.getElementById("counter1").innerHTML = counter;
@@ -48,23 +34,16 @@ function addBurrito() {
 </script>
 </head>
 <body>
-    <div align="left">
-     <h2> Hit the <strong>BURRITO</strong> To Get BURRITOS</h2>
-  </div>
+ <div align="left">
+  <h2> Hit the <strong>BURRITO</strong> To Get BURRITOS</h2>
+</div>
 <div id="counter1">      0 
   </div>
-
  <div align = "left">
-
-    Burritos    
-
-    </div>
-        <div align = "left"><img onclick="addBurrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"/> 
-
-</div>
+  Burritos    
+  </div>
+<div align = "left"><img onclick="addBurrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"/> 
+ </div>
  <button onclick="startAutomaticCounter()"> AddBurrito</button>
-    
-<button onclick
-</body>
-
+   </body>
 </html> 
