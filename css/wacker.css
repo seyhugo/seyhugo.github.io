@@ -1,12 +1,27 @@
-
-h1 {
-    color: firebrick;
-    
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+       body {
+        background-color: red;
+    }
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 33%;}
+    .col-m-2 {width: 66%;}
+    .col-m-3 {width: 100%;}
+   body {
+        background-color: lightblue;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 33%;}
+    .col-2 {width: 66%;}
+    .col-3 {width: 100%;}
+   body {
+        background-color: green;
+    }
 }
 
-html {
 
- background: -webkit-linear-gradient(left, rgba(172, 32, 92,7),
-rgba(0,255,255,1));
-
-}
