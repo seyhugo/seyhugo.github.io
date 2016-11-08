@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .header {
-    border: 1px solid red;
+   
     padding: 15px;
 }
 .row::after {
@@ -13,11 +13,14 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+   
 }
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
+       body {
+        background-color: lightblue;
+    }
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -33,6 +36,9 @@
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+       body {
+        background-color: lightblue;
+    }
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -48,5 +54,8 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+       body {
+        background-color: blue;
+    }
 }
 
