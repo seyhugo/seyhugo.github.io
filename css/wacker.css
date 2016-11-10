@@ -19,7 +19,7 @@ border: 1px;
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
- background-color: green;
+ 
 
 }
 @media only screen and (min-width: 600px) {
@@ -36,9 +36,7 @@ border: 1px;
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
-    body { 
-        background-color: yellow;
-    }
+
        
 }
 @media only screen and (min-width: 768px) {
@@ -55,9 +53,14 @@ border: 1px;
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    body {
-    background-color: lightblue;
-    }
+
     
 }
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+
 
