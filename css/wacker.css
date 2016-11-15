@@ -57,10 +57,11 @@ border: 1px;
 
     
 }
-
+@media only screen and (min-width: 768px) {
 html { 
 background: -webkit-linear-gradient(left, rgba(172, 32, 92,7), 
 rgba(0,255,255,1)); 
 } 
+}
 
 
