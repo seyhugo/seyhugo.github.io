@@ -64,4 +64,17 @@ rgba(0,255,255,1));
 } 
 }
 
+@media only screen and (min-width: 1280px) {
+html { 
+background: -webkit-linear-gradient(left, rgb(36, 172, 32), 
+rgb(255, 0, 4)); 
+} 
+}
+
+@media only screen and (min-width: 1px) {
+html { 
+background: -webkit-linear-gradient(left, rgb(36, 172, 32), 
+rgb(0, 12, 255)); 
+} 
+}
 
