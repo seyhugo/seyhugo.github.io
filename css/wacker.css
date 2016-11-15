@@ -58,10 +58,12 @@ border: 1px;
     
 }
 @media only screen and (min-width: 768px) {
-html { 
+@media only screen and (max-width: 1279px) {
+    html { 
 background: -webkit-linear-gradient(left, rgba(172, 32, 92,7), 
 rgba(0,255,255,1)); 
 } 
+}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -72,9 +74,10 @@ rgb(255, 0, 4));
 }
 
 @media only screen and (min-width: 1px) {
+@media only screen and (max-width: 767px) {
 html { 
 background: -webkit-linear-gradient(left, rgb(36, 172, 32), 
 rgb(0, 12, 255)); 
 } 
 }
-
+}
